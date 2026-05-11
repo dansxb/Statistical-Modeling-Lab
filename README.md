@@ -2,9 +2,25 @@
 
 A collection of datasets and analyses exploring statistical relationships in agricultural data.
 
+## Contents
+
+| File | Description |
+|---|---|
+| `farm-yield-analysis-prediction-with-ml-models.ipynb` | EDA and ML models (Linear Regression, Random Forest, XGBoost, LightGBM, CatBoost) for crop yield prediction |
+| `agriculture_dataset.csv` | Full dataset — 50 farm records, 10 variables |
+| `clean_pesticide_yield.csv` | Cleaned subset — crop type, pesticide usage, and yield only |
+| `requirements.txt` | Python dependencies |
+
+## Setup
+
+```bash
+pip install -r requirements.txt
+jupyter lab
+```
+
 ## Datasets
 
-### `agriculture_dataset.csv` — Full Agriculture Dataset
+### `agriculture_dataset.csv` — Full Dataset
 50 farm records with a broad set of agronomic variables.
 
 | Column | Description |
@@ -20,8 +36,8 @@ A collection of datasets and analyses exploring statistical relationships in agr
 | `Season` | Growing season (Kharif, Rabi, Zaid) |
 | `Water_Usage(cubic meters)` | Total water consumed in cubic meters |
 
-### `crop_yield_pesticide.csv` — Cleaned Dataset
-Focused subset for analysing the relationship between pesticide usage and crop yield.
+### `clean_pesticide_yield.csv` — Cleaned Subset
+Focused on the relationship between pesticide usage and crop yield.
 
 | Column | Description |
 |---|---|
